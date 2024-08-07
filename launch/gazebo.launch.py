@@ -35,8 +35,8 @@ def generate_launch_description():
                 output="screen",
             )
     
-    move_group = IncludeLaunchDescription(join(get_package_share_directory("maciv2_moveit"), "launch", "move_group.launch.py"))
-    rviz = IncludeLaunchDescription(join(get_package_share_directory("maciv2_moveit"), "launch", "moveit_rviz.launch.py"))
+    move_group = IncludeLaunchDescription(join(get_package_share_directory("maciv2_maveit"), "launch", "move_group.launch.py"))
+    rviz = IncludeLaunchDescription(join(get_package_share_directory("maciv2_maveit"), "launch", "moveit_rviz.launch.py"))
 
         # Gazebo Bridge: This brings data (sensors/clock) out of gazebo into ROS.
     bridge = Node(

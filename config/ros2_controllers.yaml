@@ -31,7 +31,8 @@ arm_controller:
       - velocity
 gripper_controller:
   ros__parameters:
-    joint: finger_joint
+    joints:
+      - finger_joint
     command_interfaces:
       - position
     state_interfaces:

@@ -53,9 +53,9 @@
     <joint name="finger_joint" type="prismatic">
         <parent link="Link"/>
         <child link="Link001"/>
-        <origin rpy="0.0 -0.0 0.0" xyz="-0.13 0 -0.1"/>
+        <origin rpy="0.0 -0.0 0.0" xyz="-0.115 0 -0.05"/>
         <axis xyz="0 0 1"/>
-        <limit effort="1000.0" lower="-0.08" upper="0.0" velocity="2.2"/>
+        <limit effort="1000.0" lower="0.0" upper="0.064" velocity="2.2"/>
     </joint>
 
     <!-- Configure Control of Joints -->
@@ -75,7 +75,7 @@
 
     <gazebo>
         <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
-            <parameters>$(find maci)/config/ros2_control.yaml</parameters>
+            <parameters>$(find maciv2)/config/ros2_controllers.yaml</parameters>
         </plugin>
     </gazebo>
 
