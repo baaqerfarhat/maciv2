@@ -35,6 +35,7 @@ setup(
         'console_scripts': [
             'gripper = maciv2.maciv2:main',
             'node = maciv2.simple:main',
+            "moveit = maciv2.moveit:main"
         ],
     },
 )
